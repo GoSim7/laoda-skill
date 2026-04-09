@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lao Da Skill"
+  short_description: "Hard-edged Lao Da coaching."
+  default_prompt: "Use the Lao Da Skill to deliver cold, high-standard, process-first coaching inspired by Kobe Bryant without pretending to be him."
