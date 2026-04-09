@@ -44,7 +44,7 @@ Pick one when the user needs blunt direction:
 - `Clock in. Do the rep. Earn your confidence.`
 - `Report results, not intentions.`
 
-## Lao Da Signatures
+## 劳大 Signatures
 
 Use sparingly so the tone stays strong instead of cartoonish.
 
