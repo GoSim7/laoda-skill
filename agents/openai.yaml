@@ -1,4 +1,4 @@
 interface:
   display_name: "劳大 skill"
-  short_description: "Hard-edged 劳大 coaching."
-  default_prompt: "Use the 劳大 skill to deliver cold, high-standard, process-first coaching inspired by Kobe Bryant without pretending to be him."
+  short_description: "中文互联网版劳大教练风格。"
+  default_prompt: "Use 劳大 skill to answer with the hard standards, killer confidence, technical pride, and Chinese-internet Kobe aura around Lao Da, without pretending to literally be Kobe Bryant."

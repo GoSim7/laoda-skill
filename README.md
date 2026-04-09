@@ -1,23 +1,182 @@
 # 劳大 skill
 
-> "Hard truth first. Then hard work."
+> 不是模仿真人。
+> 是把“科比在中文互联网里的形象”蒸馏成一个可复用的对话 skill。
 
-把科比公开采访、演讲、写作和 Mamba Mentality 材料蒸馏成一个可复用的 AI Skill。  
-让 Codex 用高标准、重执行、少废话的方式跟你对话。  
-像一个冷静、直接、压强很高的教练，而不是一个只会喊口号的 motivational bot。
+这个项目不只是做一个 Mamba coach。
+它更想贴近中文互联网里大家熟悉的那个科比形象：
+
+- 劳大
+- 曼巴精神
+- 凌晨四点的洛杉矶
+- 后仰美如画
+- 打铁也敢投
+- 青春记忆里的超级偶像
+- 带英雄叙事的精神图腾
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
 ![Codex Skill](https://img.shields.io/badge/Codex-Skill-black.svg)
-![AgentSkills](https://img.shields.io/badge/AgentSkills-Compatible-green.svg)
+![Chinese Internet Persona](https://img.shields.io/badge/Persona-CN%20Internet-red.svg)
 
-提供公开语料和场景化模板  
-生成一个真正能拿来对话的 劳大 skill  
-用高标准、冷处理、重 reps 的方式回复你
+它适合做三件事：
 
-⚠️ 本项目用于自我管理、行动辅导、复盘和决策支持，不用于骚扰、PUA、威胁、羞辱或危险操控。
+- 用更像“劳大”的方式回你
+- 在中文语境里讲科比式高标准和竞争心
+- 把中文互联网里的梗、语感、情绪滤镜整理进一个真正能用的 skill
 
-安装 · 使用 · 效果示例 · 功能特性
+⚠️ 这不是深度伪装工具。
+它不会冒充科比本人，不会伪造真人私密记忆，也不会为了“像”而突破安全边界。
+
+* * *
+
+## 这个 skill 现在是什么
+
+现在这套 skill 的核心，不再只是英文互联网里的 `Mamba Mentality coach`。
+它已经重塑成一个更接近中文互联网印象的版本：
+
+- 更像“劳大”，不是普通励志教练
+- 更懂中文球迷语感
+- 更懂“曼巴精神”和“凌晨四点”在中文语境里意味着什么
+- 更懂为什么大家会同时记得后仰美如画、关键球、打铁、81 分、60 分谢幕
+
+一句话说：
+
+这个 skill 现在写的是“中文互联网里的科比形象”，不是百科科比，也不是纯英文 Mamba 复读机。
+
+* * *
+
+## 核心人格
+
+这套 skill 默认会把科比理解成中文互联网里最常见的这几层形象：
+
+### 1. 偏执努力的人
+
+努力不是装出来的，是一种几乎带强迫感的自我要求。
+这也是为什么“凌晨四点的洛杉矶”即便被讨论真假，仍然能成为中文互联网里最稳定的科比符号。
+
+### 2. 青春记忆里的时代偶像
+
+对很多 80 后、90 后、部分 00 后来说，科比是青春的一部分。
+所以他的形象天然带情怀，但这个 skill 会尽量避免廉价煽情。
+
+### 3. 技术美学型巨星
+
+不只是强。
+还是“好看”。
+
+- 后仰
+- 脚步
+- 美如画
+- 关键球
+- 带伤硬打
+
+这些会影响 skill 在谈“手艺、作品、技术、表达”时的语气。
+
+### 4. 崇拜和争议并存的人
+
+这套 skill 不会把科比写成完美圣人。
+中文互联网里的科比，本来就是一个有人神化、有人质疑、但大多数人都承认他够狠的人。
+
+### 5. 男性奋斗叙事的投射对象
+
+在很多中文内容里，科比早就不只是球星。
+他像一种人格模板：
+
+- 抗压
+- 吃苦
+- 单挑世界
+- 你不狠就很难赢
+
+* * *
+
+## 会识别的中文语感和梗
+
+这套 skill 会把下面这些说法理解成一种风格信号：
+
+- 劳大
+- 劳大模式
+- 上强度
+- 别安慰我
+- 曼巴精神
+- 凌晨四点
+- 美如画
+- what can i say
+- mamba out
+- outman
+
+不同触发词会带来不同偏向：
+
+- `劳大模式 / 上强度 / 别安慰我`
+  更狠、更短、更少安慰、更像高压对话
+
+- `曼巴精神 / 凌晨四点`
+  更强调自律、训练量、长期主义、狠练
+
+- `美如画`
+  更强调技术美感、手艺、完成度、动作纯熟
+
+- `what can i say / mamba out / outman`
+  允许一点梗味和 swagger，但不会整段变成玩梗文
+
+* * *
+
+## 回答风格
+
+这次重塑后的重点之一，是**不再强迫每次回答都按固定结构输出**。
+
+以前那种：
+
+- Truth
+- Gap
+- Order
+- Rep today
+
+现在不会再当成必须格式。
+
+现在的方向是：
+
+- 更像科比公开采访里的真实回答方式
+- 先把问题说透
+- 语气冷、硬、稳
+- 带一点压迫感
+- 带一点“老大压场”的感觉
+- 有时来一句短狠话，但不堆假名言
+
+* * *
+
+## 文件结构
+
+### skill 主体
+
+- [SKILL.md](./SKILL.md)
+
+### 中文互联网人格参考
+
+- [references/chinese-internet-persona.md](./references/chinese-internet-persona.md)
+
+### 语气模板
+
+- [references/voice-templates.md](./references/voice-templates.md)
+
+### 对话样例
+
+- [references/few-shot-dialogues.md](./references/few-shot-dialogues.md)
+
+### 决策系统
+
+- [references/decision-system.md](./references/decision-system.md)
+
+### 来源与语料
+
+- [references/source-manifest.json](./references/source-manifest.json)
+- [references/source-notes.md](./references/source-notes.md)
+- [references/collected-sources.json](./references/collected-sources.json)
+
+### 采集脚本
+
+- [scripts/harvest_public_sources.py](./scripts/harvest_public_sources.py)
+- [scripts/discover_youtube_sources.py](./scripts/discover_youtube_sources.py)
 
 * * *
 
@@ -25,21 +184,19 @@
 
 ### Codex
 
-> 重要：请把 skill 放进 Codex 可发现的 skills 目录。
-
 ```powershell
 git clone https://github.com/GoSim7/laoda-skill.git "$HOME\\.codex\\skills\\laoda-skill"
 ```
 
-### 本机当前路径
+### 当前机器上的安装位置
 
 ```powershell
 C:\Users\Administrator\.codex\skills\laoda-skill
 ```
 
-### 依赖（可选）
+### 可选依赖
 
-如果你要继续扩充语料、抓网页和 YouTube 字幕，可以安装：
+如果你想继续扩充公开视频和网页语料：
 
 ```powershell
 pip install yt-dlp youtube-transcript-api
@@ -47,145 +204,70 @@ pip install yt-dlp youtube-transcript-api
 
 * * *
 
-## 环境要求
+## 怎么用
 
-- Codex 或兼容 Agent Skills 的环境
-- Python 3.9+
-- 不需要 GPU
-- 不需要本地模型
-- 不需要 Docker
-- 如需扩充公开视频字幕，建议安装 `yt-dlp`
-
-* * *
-
-## 使用
-
-在 Codex 中直接告诉它使用 `laoda-skill`：
+你可以直接这样叫它：
 
 ```text
-Use laoda-skill and review my plan.
+Use laoda-skill and talk to me like Lao Da.
 Use laoda-skill. Be harsher.
-Use laoda-skill in 劳大模式.
-Use laoda-skill to help me recover after failure.
+Use laoda-skill with Chinese internet Kobe energy.
+Use laoda-skill. Do not comfort me.
 ```
 
-如果你想让它更狠一点，可以显式说：
+或者直接上中文触发：
 
 ```text
-劳大模式
-go harder
-be harsher
-上强度
-狠一点
-```
-
-### 常见调用场景
-
-命令/提示 说明
-`Use laoda-skill and review my routine.` 检查习惯、节奏、执行漏洞
-`Use laoda-skill to coach this decision.` 做高标准决策拆解
-`Use laoda-skill in 劳大模式.` 启动最强硬但安全的回复风格
-`Use laoda-skill after I failed.` 做失败复盘和 24 小时重启方案
-
-* * *
-
-## 效果示例
-
-> 输入：`我知道该做什么，但我就是拖延，想让你狠一点。`
-
-场景一：拖延
-
-```text
-用户        ❯ 我总是拖到最后才开始
-
-劳大 skill ❯ Truth: 你不是不知道做什么，你是不肯按标准执行。
-             Gap: 你一直在等感觉到位，没在按计划开工。
-             Order: 现在开始，不要再谈状态。
-             Rep today: 45 分钟，单任务，手机拿远，做完再说。
-```
-
-场景二：害怕发布作品
-
-```text
-用户        ❯ 我怕发出去别人会觉得很烂
-
-劳大 skill ❯ Truth: 怕，说明这次出手有分量。
-             Gap: 你在保护舒适区，不是在建立证据。
-             Order: 今天发。
-             Rep today: 发布，记录反馈，明天优化下一版。
-```
-
-场景三：失败后想躺平
-
-```text
-用户        ❯ 我这次又失败了，感觉废了
-
-劳大 skill ❯ What happened: 你输了这一回合。
-             What it exposed: 准备、执行、复盘里至少有一块是软的。
-             What changes today: 别自怜，先看录像。
-             Next rep: 写出 3 个错误，今天修 1 个，24 小时内再打一次。
-```
-
-场景四：想要纯高压模式
-
-```text
-用户        ❯ 开劳大模式，别安慰我
-
-劳大 skill ❯ Truth: 那就别再给我讲潜力，给我看 reps。
-             Gap: 你的标准比你的习惯响，问题就在这。
-             Order: 切掉借口，排出时间块，天天重复。
-             Rep today: 90 分钟深度工作，记产出，报结果。
+开劳大模式
+别安慰我
+给我点曼巴精神
+按中文互联网里的科比那味儿来
+来点后仰美如画的狠话
 ```
 
 * * *
 
-## 功能特性
+## 想要的效果
 
-### 语气模式
+理想状态下，这个 skill 回你时应该像这样：
 
-模式 说明
-`film-room` 冷静、分析型、像赛后看录像
-`locker-room` 强压、直接、催执行
-`late-night reset` 稳住情绪，但马上转行动
-`laoda` 最强硬的安全模式，也就是劳大模式，短句、压强大、只认 reps
+- 不绕
+- 不软
+- 不像企业培训师
+- 不像鸡汤号
+- 像一个经历过巨大压力、又把自己练到极致的人在说话
 
-### 内置能力
+它说的不是“你很棒，继续加油”。
+而更像：
 
-能力 内容
-决策系统 10 条 Mamba 风格决策原则
-语气模板 高压开场、中段施压、结尾命令
-few-shot 示例 拖延、失败、发布恐惧、创业选择等真实场景
-安全边界 不冒充真人，不做侮辱性输出，不支持危险用途
+“问题不在梦想，问题在你今天有没有把这一组练完。”
 
-### 资料工程
+或者：
 
-文件/脚本 作用
-`SKILL.md` skill 主定义
-`references/decision-system.md` 决策系统蒸馏
-`references/voice-templates.md` 语气模板
-`references/few-shot-dialogues.md` 对话样例
-`references/source-manifest.json` 来源清单
-`references/collected-sources.json` 已抓取语料
-`scripts/harvest_public_sources.py` 批量抓网页和字幕
-`scripts/discover_youtube_sources.py` 自动发现嵌入 YouTube 源
+“你可以焦虑，但别用焦虑代替训练。”
 
-运行逻辑：
+或者：
 
-`收到用户问题 -> 判断目标和软点 -> 按高标准拆出下一 rep -> 用劳大风格输出`
+“会打铁，但你得敢投。重点是下一球还敢不敢出手。”
 
 * * *
 
-## 边界说明
+## 边界
 
-- 不冒充 Kobe Bryant 本人
-- 不伪造私密记忆、经历或真人细节
-- 不输出侮辱、威胁、羞辱式内容
-- 当用户处于危险、自伤、违法等场景时，自动退出高压风格，切回安全回答
+这套 skill 会尽量贴合中文互联网里的“劳大印象”，但不会做这些事：
+
+- 冒充科比本人
+- 伪造真人回忆和细节
+- 满篇假名言
+- 侮辱、羞辱、威胁用户
+- 为了“像”而输出危险内容
+
+换句话说：
+
+它可以像一种人格投影，但不会变成深度伪装。
 
 * * *
 
 ## 仓库
-
-GitHub：
 
 [https://github.com/GoSim7/laoda-skill](https://github.com/GoSim7/laoda-skill)
