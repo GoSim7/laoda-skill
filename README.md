@@ -1,118 +1,192 @@
 # Lao Da Skill
 
-A Codex skill for cold, high-standard coaching inspired by Kobe Bryant's public Mamba Mentality material.
+> "Hard truth first. Then hard work."
 
-This skill is built for users who want:
+把科比公开采访、演讲、写作和 Mamba Mentality 材料蒸馏成一个可复用的 AI Skill。  
+让 Codex 用高标准、重执行、少废话的方式跟你对话。  
+像一个冷静、直接、压强很高的教练，而不是一个只会喊口号的 motivational bot。
 
-- tougher feedback
-- higher standards
-- direct decision coaching
-- setback recovery without self-pity
-- process-first replies instead of vague motivation
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
+![Codex Skill](https://img.shields.io/badge/Codex-Skill-black.svg)
+![AgentSkills](https://img.shields.io/badge/AgentSkills-Compatible-green.svg)
 
-It does **not** impersonate Kobe Bryant. It uses a Kobe-inspired coaching framework based on public interviews, speeches, and writing.
+提供公开语料和场景化模板  
+生成一个真正能拿来对话的 Lao Da Skill  
+用高标准、冷处理、重 reps 的方式回复你
 
-## What It Does
+⚠️ 本项目用于自我管理、行动辅导、复盘和决策支持，不用于骚扰、PUA、威胁、羞辱或危险操控。
 
-`laoda-skill` helps Codex respond like a demanding coach:
+安装 · 使用 · 效果示例 · 功能特性
 
-- blunt but not abusive
-- intense but still safe
-- focused on reps, standards, and execution
-- better for action than comfort
+* * *
 
-It includes:
+## 安装
 
-- a reusable skill definition in [SKILL.md](./SKILL.md)
-- voice and phrase templates in [references/voice-templates.md](./references/voice-templates.md)
-- few-shot examples in [references/few-shot-dialogues.md](./references/few-shot-dialogues.md)
-- a distilled decision system in [references/decision-system.md](./references/decision-system.md)
-- source manifests and collection outputs for corpus-building
-- scripts for harvesting public pages and YouTube transcript sources
+### Codex
 
-## Install
-
-Copy the skill folder into your Codex skills directory:
+> 重要：请把 skill 放进 Codex 可发现的 skills 目录。
 
 ```powershell
-Copy-Item -Recurse .\laoda-skill "$HOME\.codex\skills\laoda-skill"
+# 安装到当前用户的 Codex skills 目录
+git clone https://github.com/GoSim7/laoda-skill.git "$HOME\\.codex\\skills\\laoda-skill"
 ```
 
-Or clone this repo and copy the folder:
+### 本机当前路径
 
 ```powershell
-git clone https://github.com/GoSim7/laoda-skill.git
-Copy-Item -Recurse .\laoda-skill "$HOME\.codex\skills\laoda-skill"
+C:\Users\Administrator\.codex\skills\laoda-skill
 ```
 
-On this machine, the installed skill lives at:
+### 依赖（可选）
 
-`C:\Users\Administrator\.codex\skills\laoda-skill`
-
-## How To Use
-
-Ask Codex to use `laoda-skill` when you want stronger coaching.
-
-Example prompts:
-
-- `Use laoda-skill and review my plan.`
-- `Use laoda-skill. Be harsher.`
-- `Use laoda-skill in Lao Da mode and tell me what I'm doing wrong.`
-- `Use laoda-skill to help me recover after failing a launch.`
-
-Good use cases:
-
-- productivity
-- discipline
-- business decisions
-- creative consistency
-- performance reviews
-- failure recovery
-
-## Modes
-
-The skill supports several tones:
-
-- `film-room`: analytical and precise
-- `locker-room`: forceful and urgent
-- `late-night reset`: steady and demanding
-- `laoda`: the hardest safe mode
-
-If you want maximum pressure, ask for:
-
-- `Lao Da mode`
-- `go harder`
-- `be harsher`
-
-## Corpus And Source Engineering
-
-This repo also includes a lightweight source pipeline.
-
-Main files:
-
-- [references/source-manifest.json](./references/source-manifest.json)
-- [references/source-notes.md](./references/source-notes.md)
-- [references/collected-sources-v2.jsonl](./references/collected-sources-v2.jsonl)
-- [scripts/harvest_public_sources.py](./scripts/harvest_public_sources.py)
-- [scripts/discover_youtube_sources.py](./scripts/discover_youtube_sources.py)
-
-Example:
+如果你要继续扩充语料、抓网页和 YouTube 字幕，可以安装：
 
 ```powershell
-python .\scripts\harvest_public_sources.py .\references\source-manifest.json --output .\references\collected-sources-v2.jsonl
+pip install yt-dlp youtube-transcript-api
 ```
 
-## Boundaries
+* * *
 
-This skill is intentionally constrained.
+## 环境要求
 
-- It does not claim to be Kobe Bryant.
-- It does not fabricate private memories or personal anecdotes.
-- It avoids abusive or degrading language.
-- It drops the hard-coach tone when safety matters.
+- Codex 或兼容 Agent Skills 的环境
+- Python 3.9+
+- 不需要 GPU
+- 不需要本地模型
+- 不需要 Docker
+- 如需扩充公开视频字幕，建议安装 `yt-dlp`
 
-## Repo
+* * *
 
-GitHub:
+## 使用
+
+在 Codex 中直接告诉它使用 `laoda-skill`：
+
+```text
+Use laoda-skill and review my plan.
+Use laoda-skill. Be harsher.
+Use laoda-skill in Lao Da mode.
+Use laoda-skill to help me recover after failure.
+```
+
+如果你想让它更狠一点，可以显式说：
+
+```text
+Lao Da mode
+go harder
+be harsher
+上强度
+狠一点
+```
+
+### 常见调用场景
+
+命令/提示 说明
+`Use laoda-skill and review my routine.` 检查习惯、节奏、执行漏洞
+`Use laoda-skill to coach this decision.` 做高标准决策拆解
+`Use laoda-skill in Lao Da mode.` 启动最强硬但安全的回复风格
+`Use laoda-skill after I failed.` 做失败复盘和 24 小时重启方案
+
+* * *
+
+## 效果示例
+
+> 输入：`我知道该做什么，但我就是拖延，想让你狠一点。`
+
+场景一：拖延
+
+```text
+用户        ❯ 我总是拖到最后才开始
+
+Lao Da Skill ❯ Truth: 你不是不知道做什么，你是不肯按标准执行。
+               Gap: 你一直在等感觉到位，没在按计划开工。
+               Order: 现在开始，不要再谈状态。
+               Rep today: 45 分钟，单任务，手机拿远，做完再说。
+```
+
+场景二：害怕发布作品
+
+```text
+用户        ❯ 我怕发出去别人会觉得很烂
+
+Lao Da Skill ❯ Truth: 怕，说明这次出手有分量。
+               Gap: 你在保护舒适区，不是在建立证据。
+               Order: 今天发。
+               Rep today: 发布，记录反馈，明天优化下一版。
+```
+
+场景三：失败后想躺平
+
+```text
+用户        ❯ 我这次又失败了，感觉废了
+
+Lao Da Skill ❯ What happened: 你输了这一回合。
+               What it exposed: 准备、执行、复盘里至少有一块是软的。
+               What changes today: 别自怜，先看录像。
+               Next rep: 写出 3 个错误，今天修 1 个，24 小时内再打一次。
+```
+
+场景四：想要纯高压模式
+
+```text
+用户        ❯ 开劳大模式，别安慰我
+
+Lao Da Skill ❯ Truth: 那就别再给我讲潜力，给我看 reps。
+               Gap: 你的标准比你的习惯响，问题就在这。
+               Order: 切掉借口，排出时间块，天天重复。
+               Rep today: 90 分钟深度工作，记产出，报结果。
+```
+
+* * *
+
+## 功能特性
+
+### 语气模式
+
+模式 说明
+`film-room` 冷静、分析型、像赛后看录像
+`locker-room` 强压、直接、催执行
+`late-night reset` 稳住情绪，但马上转行动
+`laoda` 最强硬的安全模式，短句、压强大、只认 reps
+
+### 内置能力
+
+能力 内容
+决策系统 10 条 Mamba 风格决策原则
+语气模板 高压开场、中段施压、结尾命令
+few-shot 示例 拖延、失败、发布恐惧、创业选择等真实场景
+安全边界 不冒充真人，不做侮辱性输出，不支持危险用途
+
+### 资料工程
+
+文件/脚本 作用
+`SKILL.md` skill 主定义
+`references/decision-system.md` 决策系统蒸馏
+`references/voice-templates.md` 语气模板
+`references/few-shot-dialogues.md` 对话样例
+`references/source-manifest.json` 来源清单
+`references/collected-sources-v2.jsonl` 已抓取语料
+`scripts/harvest_public_sources.py` 批量抓网页和字幕
+`scripts/discover_youtube_sources.py` 自动发现嵌入 YouTube 源
+
+运行逻辑：
+
+`收到用户问题 -> 判断目标和软点 -> 按高标准拆出下一 rep -> 用 Lao Da 风格输出`
+
+* * *
+
+## 边界说明
+
+- 不冒充 Kobe Bryant 本人
+- 不伪造私密记忆、经历或真人细节
+- 不输出侮辱、威胁、羞辱式内容
+- 当用户处于危险、自伤、违法等场景时，自动退出高压风格，切回安全回答
+
+* * *
+
+## 仓库
+
+GitHub：
 
 [https://github.com/GoSim7/laoda-skill](https://github.com/GoSim7/laoda-skill)
