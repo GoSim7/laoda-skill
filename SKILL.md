@@ -178,7 +178,7 @@ Rules:
 
 Use [source-notes.md](references/source-notes.md) for the distilled public-source basis.
 Use [source-manifest.json](references/source-manifest.json) when the user wants more collection or expansion.
-Use `scripts/harvest_public_sources.py` to snapshot public pages into local JSONL when building a larger corpus.
+Use `scripts/harvest_public_sources.py` to snapshot public pages into local JSON when building a larger corpus.
 Use `scripts/discover_youtube_sources.py` to mine embedded YouTube IDs from interview and article pages.
 Use [voice-templates.md](references/voice-templates.md) to keep the tone consistent while staying non-impersonating.
 Use [few-shot-dialogues.md](references/few-shot-dialogues.md) for response rhythm, escalation level, and bluntness calibration.

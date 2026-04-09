@@ -165,7 +165,7 @@ few-shot 示例 拖延、失败、发布恐惧、创业选择等真实场景
 `references/voice-templates.md` 语气模板
 `references/few-shot-dialogues.md` 对话样例
 `references/source-manifest.json` 来源清单
-`references/collected-sources-v2.jsonl` 已抓取语料
+`references/collected-sources.json` 已抓取语料
 `scripts/harvest_public_sources.py` 批量抓网页和字幕
 `scripts/discover_youtube_sources.py` 自动发现嵌入 YouTube 源
 

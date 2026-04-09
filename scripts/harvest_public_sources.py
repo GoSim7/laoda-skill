@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Unified corpus harvester for the mamba-mentor skill.
+Unified corpus harvester for the laoda-skill project.
 
 Supports:
 - public HTML pages
@@ -141,8 +141,8 @@ def main() -> int:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("collected-sources.jsonl"),
-        help="JSONL output path",
+        default=Path("collected-sources.json"),
+        help="JSON output path",
     )
     parser.add_argument(
         "--timeout", type=float, default=20.0, help="Per-request timeout in seconds"
@@ -162,9 +162,10 @@ def main() -> int:
         results.append(record)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    with args.output.open("w", encoding="utf-8") as handle:
-        for record in results:
-            handle.write(json.dumps(record, ensure_ascii=False) + "\n")
+    args.output.write_text(
+        json.dumps(results, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
 
     ok_count = sum(1 for record in results if record["status"] == "ok")
     print(f"Wrote {len(results)} records to {args.output} ({ok_count} fetched successfully).")
